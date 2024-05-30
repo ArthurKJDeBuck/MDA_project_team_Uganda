@@ -42,7 +42,7 @@ def calculate_columns(row):
             deltaT = 0
             dueto_AED = 0
         else:
-            deltaT = min(T_d-T3_T0) - T_max_V
+            deltaT = min(T_d, T3_T0) - T_max_V
             dueto_AED = 1
     elif T3_T0 > T_max_VD:
         if T_d < T_max_V:
